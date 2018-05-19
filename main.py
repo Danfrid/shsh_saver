@@ -55,6 +55,5 @@ for device in devices_to_monitor:
 			if needsToSaveBlob(build_id, blob_storage_path + ecid):
 				print("\t~> Trying to download")
 				call([tsschecker_path + "tsschecker","-d","iPad5,3","--boardconfig",board,"-e",ecid,"--buildid",build_id,"-l","-s","--save-path", blob_storage_path + ecid +"/"])
-				#tsschecker -d iPad5,3 —boardconfig j81ap -s /home/danfr1d/ -e A588008EA6526 -l
 
 				
